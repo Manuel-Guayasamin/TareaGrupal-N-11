@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Comidas</title>
+    <link rel="stylesheet" href="estilos/estilosMenu.css">
+</head>
+<body>
+    <h1>Menú de Comidas</h1>
+    <div class="menu-container">
+        <div class="item">
+            <img src="imagenes-Menu/img1.png" alt="Comida 1">
+            <h2>Comida 1</h2>
+            <p>Precio: $10</p>
+        </div>
+        <div class="item">
+            <img src="imagenes-Menu/img1.png" alt="Comida 2">
+            <h2>Comida 2</h2>
+            <p>Precio: $12</p>
+            <input type="number" min="0" value="0" id="cantidad2">
+            <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+        </div>
+        <div class="item">
+            <img src="imagenes-Menu/img1.png" alt="Comida 3">
+            <h2>Comida 3</h2>
+            <p>Precio: $14</p>
+            <input type="number" min="0" value="0" id="cantidad2">
+            <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+        </div>
+        <div class="item">
+            <img src="imagenes-Menu/img1.png" alt="Comida 4">
+            <h2>Comida 4</h2>
+            <p>Precio: $16</p>
+            <input type="number" min="0" value="0" id="cantidad2">
+            <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+        </div>
+
+        <!-- Agrega más elementos de comida según sea necesario -->
+    </div>
+
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito-items"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button onclick="realizarPedido()">Realizar Pedido</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

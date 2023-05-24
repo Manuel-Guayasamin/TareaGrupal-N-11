@@ -1,0 +1,27 @@
+body {
+    border-top: 30px solid #333;
+    border-bottom: 30px solid #333;
+    background-color: #fdfcfc;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    
+}
+
+.item {
+    border: 1px solid #533535;
+    padding: 20px;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item h2, .item p {
+    margin: 10px 0;
+}

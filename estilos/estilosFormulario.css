@@ -1,0 +1,39 @@
+
+
+html{
+    font: normal 16px / 28px "Roboto Slab",Helvetica,Arial,Verdana,sans-serif;
+    word-spacing: normal;
+    color: #54575c;
+}
+
+body {
+    background-color: aquamarine;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px;
+    border-top: 20px solid #333;
+    border-bottom: 20px solid #333;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+
+.form-group {
+    margin-bottom: 2px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 10px;
+}
