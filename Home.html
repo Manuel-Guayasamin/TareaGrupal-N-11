@@ -3,30 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor: " content="Mamuel Alejandro Guayasamin Aviles">
     <title>Menu Principal</title>
     <link rel="stylesheet" href="estilos/estilosHome.css">
-</head>
-<body>
+    <style>
+        body{
+          font-family: sans-serif;
+          background-image: url(Imagenes/Fondo.jpg);
+          margin: 0;
+        }
+        header{
+          display: flex;
+          height: 70px;
+          background-color: #804008;
+          justify-content: space-between;
+          align-items: center;
+          padding: 40px;
+        }
+        .logo{
+          display: flex;
+          align-items: center;
+        }
+        .logo img{
+          height: 80px;
+        }
+  
+        a{
+          text-decoration: nome;
+          color: black;
+        }
+  
+        nav a{
+          font-weight: 600;
+          padding-right: 10px;
+        }
+  
+        nav a:hover{
+          color: white;
+        }
+  
+        @media(max-width:700px){
+          header{
+            flex-direction: column;
+          }
+        }
+  
+        nav{
+          padding: 10px 0px;
+        }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+        h1{
+          font-size: 54px;
+          text-transform: uppercase;
+          text-align: center;
+          color: #fff;
+          font-family: 'Odibee Sans', cursive;
+          margin-bottom: 0;
+        }
+  
+        #css {
+          color: yellow;
+          font-family: 'Odibee Sans', cursive;
+        }
+  
+        .carousel-wrapper {
+          height: 400px;
+          position: relative;
+          width: 800px;
+          display: block;
+          margin: 50px auto ;
+          border: 2px solid black;
+        }
+  
+        .carousel-item {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 25px 50px;
+          opacity: 0;
+          transition: all 0.5s ease-in-out;
+        }
+        .arrow{
+          border: solid black;
+          border-width: 0 3px 3px 0;
+          display: inline-block;
+          padding: 12px;
+        }
+        .arrow-prev {
+          left: 30px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%) rotate(135deg);
+        }
+        .arrow-next {
+          right: 30px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+  
+        [id^= "item"] {
+          display: none;
+        }
+        .item-1 {
+          z-index: 2;
+          opacity: 1;
+          background: url('Imagenes/Img-1.jpg');
+          background-size: cover;
+        }
+        .item-2 {
+          background: url('Imagenes/Img-2.jpg');
+          background-size: cover;
+        }
+        .item-3 {
+          background: url('Imagenes/Img-3.jpg');
+          background-size: cover;
+        }
+  
+        *:target ~ .item-1{
+          opacity: 0;
+        }
+        #item-1:target ~ .item-1 {
+          opacity: 1;
+  
+        }
+        #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+          z-index: 3;
+          opacity: 1;
+        } 
+  
+  
+  
+      .Img-4{
+        width: 250px;
+        height: 200px;
+        padding: 0 15px;
+        float: right;
+      }
+  
+      p{
+        text-align: center;
+      }
+  
+  
+      </style>
+  
+    </head>
+  
+  
+  
+  
     <body>
-        <section id="banner">
-            <h1>Bienvenido al Restaurante</h1>
-            <p>Disfruta de nuestra deliciosa comida a domicilio</p>
-        </section>
-        <nav>
-            <ul>
-                <li><a href="Menu.html">Menú</a></li>
-                <li><a href="formularioPedido.html">Formulario</a></li>
-                <li><a href="">Acerca de Nosotros</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>
-        </nav>
-        <h2 style="text-align: center">BIENVENIDOS A ###</h2>
-        <p style="text-align: center">Un lugar diseñado especialmente para tí y tus ganas de pasarlo bien. Ven con tus amigos y disfruta del mejor ambiente, conviértete en el protagonista de la noche en nuestro karaoke o simplemente disfruta de nuestras deliciosas picadas. Anímate, que nunca sabes lo que la noche te tiene preparado.</p>
-        <span>Parrafo 1 </span>
-        <span>Parrafo 2 </span>
-        <span>Parrafo 3 </span>
-        <span>Parrafo 4 </span>
-        
-</body>
-</html>
+      <header>
+      <a href="#" class="logo">
+        <img src="Imagenes/Logo.jpg"alt="Logo del restaurante" class="logo-img">
+        <h2 class="nombre-empres">Restaurante y Servicio a Domicilio</h2>
+      </a>
+      <nav>
+        <a href="Home">Home</a>
+        <a href="Menu">Menú</a>
+        <a href="formularioPedido">Formulario de pedidos</a>
+        <a href="#">Acerca de nosotros</a>
+        <a href="#">Contacto</a>
+      </nav>
+  
+      </header>
+  
+      <header1>
+        <div class="carousel-wrapper">
+          <span id="item-1"></span>
+          <span id="item-2"></span>
+          <span id="item-3"></span>
+  
+          <div class="carousel-item item-1">
+            <a href="#item-3" class="arrow-prev arrow"></a>
+            <a href="#item-2" class="arrow-next arrow"></a>
+          </div>
+  
+          <div class="carousel-item item-2">
+            <a href="#item-1" class="arrow-prev arrow"></a>
+            <a href="#item-3" class="arrow-next arrow"></a>
+          </div>
+  
+          <div class="carousel-item item-3">
+            <a href="#item-2" class="arrow-prev arrow"></a>
+            <a href="#item-1" class="arrow-next arrow"></a>
+          </div>
+  
+        </div>
+      </header1>
+  
+  
+      <header2>
+        <div class="Container">
+          <p>
+            <img class="Img-4" src="Imagenes/Img-4.jpg" alt="">
+            BIENVENIDOS A MONGO’S<br>
+            Un lugar diseñado especialmente para tí y tus ganas de pasarlo bien. Ven con tus amigos y disfruta del mejor ambiente, conviértete en el protagonista de la noche en nuestro karaoke o simplemente disfruta de nuestras deliciosas picadas. Anímate, que nunca sabes lo que la noche te tiene preparado.
+          </p>
+          </div>
+  
+        </div>
+      </header2>
+  
+  
+  
+  
+  
+  
+  
+  
+    </body>
+  </html>
